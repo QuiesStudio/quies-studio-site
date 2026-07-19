@@ -92,6 +92,18 @@
       </div>
       <span class="soon">In progress · 2026</span>
     </div>
+    <div class="hero-img" style="margin-bottom:38px">
+      <!-- A video carries its own aspect ratio, so it needs no
+           padding-box: width:100% + height:auto is enough, and inline
+           so a cached stylesheet can never leave a gap under it. -->
+      <video controls playsinline preload="none"
+             poster="video/tempus-poster.jpg"
+             aria-label="Tempus touring its stations"
+             style="width:100%;height:auto;display:block;border-radius:16px;
+                    background:#000;box-shadow:0 24px 60px -28px rgba(60,45,25,.45)">
+        <source src="video/tempus-tour.mp4" type="video/mp4">
+      </video>
+    </div>
   </div>
   <div class="gallery">
     <figure><img src="img/tempus-clock.jpg" alt="Tempus showing the hour, with the earth and moon on the dial" loading="lazy"><figcaption>The hour</figcaption></figure>
